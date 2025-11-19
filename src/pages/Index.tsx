@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, ExternalLink } from "lucide-react";
+import { Mail, MapPin, ExternalLink, Linkedin, Phone } from "lucide-react";
 
 // Import project images
 import powerBiImage from "@/assets/power-bi-dashboard.png";
@@ -161,8 +161,15 @@ const Index = () => {
             >
               View Projects
             </Button>
-            <Button size="lg" variant="outline" className="text-lg">
-              Download Resume
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg"
+              asChild
+            >
+              <a href="/Brendan_Cheong_Resume.docx" download>
+                Download Resume
+              </a>
             </Button>
           </div>
         </div>
@@ -295,7 +302,7 @@ const Index = () => {
             Feel free to reach out.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
             <Card className="p-6 card-shadow">
               <div className="flex items-center gap-3 mb-4">
                 <Mail className="h-5 w-5 text-primary" />
@@ -306,6 +313,34 @@ const Index = () => {
                 className="text-muted-foreground hover:text-primary transition-colors break-all"
               >
                 brendan_cheong_wang_cheng1@connect.ite.edu.sg
+              </a>
+            </Card>
+
+            <Card className="p-6 card-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <Phone className="h-5 w-5 text-primary" />
+                <h3 className="font-semibold text-foreground">Phone</h3>
+              </div>
+              <a
+                href="tel:+6590288766"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                (+65) 9028 8766
+              </a>
+            </Card>
+
+            <Card className="p-6 card-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <Linkedin className="h-5 w-5 text-primary" />
+                <h3 className="font-semibold text-foreground">LinkedIn</h3>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/brendan-cheong-1776091ba"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Brendan Cheong
               </a>
             </Card>
 
