@@ -350,7 +350,7 @@ const Index = () => {
                 <h3 className="font-semibold text-foreground">Location</h3>
               </div>
               <p className="text-muted-foreground">
-                Toa Payoh Lorong 8 Blk 233 #11-252
+                Toa Payoh Lorong 8 Blk 233
                 <br />
                 Singapore 310233
               </p>
